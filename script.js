@@ -1,13 +1,13 @@
 // 1. МАССИВЫ ДАННЫХ
 const products = [
-    { id: 1, name: "Матовая жидкая помада", category: "lips", brand: "L'Oreal", volume: "5ml", price: 899, rating: 4.7, image: "/Users/meripapismedova/Documents/верстка/12 практика/images/lipstick.jpeg" },
-    { id: 2, name: "Тональная основа", category: "face", brand: "Maybelline", volume: "30ml", price: 1299, rating: 4.5, image: '/Users/meripapismedova/Documents/верстка/12 практика/images/foundation.webp' },
-    { id: 3, name: "Палетка теней", category: "eyes", brand: "NYX", volume: "15g", price: 1599, rating: 4.8, image: '/Users/meripapismedova/Documents/верстка/12 практика/images/eyeshadows.webp' },
-    { id: 4, name: "Увлажняющий крем", category: "skincare", brand: "La Roche-Posay", volume: "50ml", price: 1899, rating: 4.9, image: "/Users/meripapismedova/Documents/верстка/12 практика/images/cream.jpeg.webp" },
-    { id: 5, name: "Блеск для губ", category: "lips", brand: "Dior", volume: "6ml", price: 2499, rating: 4.6, image: "/Users/meripapismedova/Documents/верстка/12 практика/images/lipgloss.jpg" },
-    { id: 6, name: "Консилер", category: "face", brand: "NARS", volume: "8ml", price: 2199, rating: 4.4, image: '/Users/meripapismedova/Documents/верстка/12 практика/images/concealer.jpg' },
-    { id: 7, name: "Тушь для ресниц", category: "eyes", brand: "Too Faced", volume: "10ml", price: 1799, rating: 4.7, image: '/Users/meripapismedova/Documents/верстка/12 практика/images/mascara.jpg' },
-    { id: 8, name: "Сыворотка", category: "skincare", brand: "The Ordinary", volume: "30ml", price: 999, rating: 4.3, image: '/Users/meripapismedova/Documents/верстка/12 практика/images/serum.jpeg' }
+    { id: 1, name: "Матовая жидкая помада", category: "lips", brand: "L'Oreal", volume: "5ml", price: 899, rating: 4.7, image: "images/lipstick.jpeg" },
+    { id: 2, name: "Тональная основа", category: "face", brand: "Maybelline", volume: "30ml", price: 1299, rating: 4.5, image: 'images/foundation.webp' },
+    { id: 3, name: "Палетка теней", category: "eyes", brand: "NYX", volume: "15g", price: 1599, rating: 4.8, image: 'images/eyeshadows.jpeg' },
+    { id: 4, name: "Увлажняющий крем", category: "skincare", brand: "La Roche-Posay", volume: "50ml", price: 1899, rating: 4.9, image: "images/cream.jpeg.webp" },
+    { id: 5, name: "Блеск для губ", category: "lips", brand: "Dior", volume: "6ml", price: 2499, rating: 4.6, image: "images/lipgloss.jpg" },
+    { id: 6, name: "Консилер", category: "face", brand: "NARS", volume: "8ml", price: 2199, rating: 4.4, image: 'images/concealer.jpg' },
+    { id: 7, name: "Тушь для ресниц", category: "eyes", brand: "Too Faced", volume: "10ml", price: 1799, rating: 4.7, image: 'images/mascara.jpg' },
+    { id: 8, name: "Сыворотка", category: "skincare", brand: "The Ordinary", volume: "30ml", price: 999, rating: 4.3, image: 'images/serum.jpeg' }
 ];
 
 // Данные для таблицы (можно взять те же товары)
