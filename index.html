@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour Cosmetics — Магазин профессиональной косметики</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/logo-icon.png" type="image/png">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/images/logo.svg" alt="Логотип Glamour Cosmetics" width="150">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#table">Сравнение</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="cart-toggle" class="cart-btn">Корзина (<span id="cart-count">0</span>)</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+        <!-- Герой-секция -->
+        <section class="hero">
+            <div class="container">
+                <h1>Профессиональная косметика для идеального образа</h1>
+                <p>Откройте для себя лучшие бренды по выгодным ценам</p>
+                <a href="#catalog" class="btn btn-primary">Смотреть каталог</a>
+            </div>
+        </section>
+
+        <!-- Каталог товаров -->
+        <section id="catalog" class="catalog section">
+            <div class="container">
+                <h2>Популярные товары</h2>
+                <!-- Фильтры (обязательный интерактив) -->
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="lips">Для губ</button>
+                    <button class="filter-btn" data-filter="face">Для лица</button>
+                    <button class="filter-btn" data-filter="eyes">Для глаз</button>
+                    <button class="filter-btn" data-filter="skincare">Уход</button>
+                </div>
+                <!-- Контейнер для карточек товаров (генерируется JS) -->
+                <div class="products-grid" id="products-container">
+                    <!-- Карточки будут добавляться через JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ОБЯЗАТЕЛЬНАЯ ТАБЛИЦА: Сравнение продуктов -->
+        <section id="table" class="comparison section">
+            <div class="container">
+                <h2>Сравнение популярных брендов</h2>
+                <div class="table-wrapper">
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Бренд</th>
+                                <th>Категория</th>
+                                <th>Объём / Вес</th>
+                                <th>Цена (руб.)</th>
+                                <th>Рейтинг</th>
+                                <th>Действие</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <!-- Данные таблицы будут добавлены через JS -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Интерактивные кнопки для таблицы -->
+                <div class="table-controls">
+                    <button id="highlight-top-rated" class="btn btn-secondary">Подсветить топ-рейтинг (4.5+)</button>
+                    <button id="sort-by-price" class="btn btn-secondary">Сортировать по цене (возр.)</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма обратной связи / подписки -->
+        <section id="contacts" class="subscribe section">
+            <div class="container">
+                <h2>Узнавайте первыми о новинках и скидках</h2>
+                <form id="subscribe-form" class="subscribe-form">
+                    <input type="email" name="email" placeholder="Ваш e-mail" required>
+                    <button type="submit" class="btn btn-primary">Подписаться</button>
+                </form>
+                <p id="form-message"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Glamour Cosmetics. Все права защищены.</p>
+        <p>Косметика для профессионалов и ценителей красоты.</p>
+    </div>
+    </footer>
+
+    <!-- Модальное окно корзины -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Ваша корзина</h2>
+            <div id="cart-items">
+                <!-- Товары в корзине будут добавляться динамически -->
+                <p class="empty-cart-msg">Корзина пуста</p>
+            </div>
+            <div class="cart-total">
+                <strong>Итого: <span id="cart-total-price">0</span> руб.</strong>
+                <button id="checkout-btn" class="btn btn-primary">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключение JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
